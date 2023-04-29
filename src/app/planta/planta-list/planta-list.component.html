@@ -1,5 +1,4 @@
 <div class="container-fluid mt-4">
-
   <div class="row">
     <div class="col-1"></div>
     <div class="col-10">
@@ -24,7 +23,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let planta of plantas">
+              <tr *ngFor="let planta of plantas;">
                 <th scope="row">{{ planta.id }}</th>
                 <td>{{ planta.nombre_comun }}</td>
                 <td>{{ planta.tipo }}</td>
@@ -37,6 +36,13 @@
     </div>
     <div class="col-1"></div>
   </div>
+  <div class="row mt-2 mb-4">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <p>Total plantas de interior:<span id="interior"> {{ counterInterior }} </span></p>
+      <p>Total plantas de exterior:<span id="exterior"> {{ counterExterior }} </span></p>
+    </div>
+  </div>
   <div class="row mt-5 mb-4 text-center">
     <div class="col-1"></div>
     <div class="col-10 fw-bold">
@@ -44,3 +50,8 @@
     </div>
   </div>
 </div>
+<script>
+  function countInterior(params) {
+
+  }
+</script>
