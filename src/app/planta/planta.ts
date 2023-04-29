@@ -1,5 +1,5 @@
 export class Planta {
-  id: string;
+  id: number;
   nombre_comun: string;
   nombre_cientifico: string;
   tipo: string;
@@ -8,7 +8,7 @@ export class Planta {
   sustrato_siembra: string;
 
   constructor(
-    id: string,
+    id: number,
     nombre_comun: string,
     nombre_cientifico: string,
     tipo: string,

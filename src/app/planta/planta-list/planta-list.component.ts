@@ -1,14 +1,13 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Planta } from '../planta';
 import { PlantaService } from '../planta.service';
-import { ChangeDetectionStrategy } from '@angular/compiler';
 
 @Component({
   selector: 'app-planta-list',
   templateUrl: './planta-list.component.html',
   styleUrls: ['./planta-list.component.css']
 })
-export class PlantaListComponent {
+export class PlantaListComponent implements OnInit {
 
   plantas: Array<Planta> = [];
   counterInterior: number = 0;
